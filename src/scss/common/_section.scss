@@ -1,0 +1,21 @@
+.section {
+  padding-top: 32px;
+  padding-bottom: 24px;
+
+  @include media(desktop) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.section__title {
+  margin-bottom: 32px;
+  color: $_add_text_color;
+  text-align: center;
+  @include font(28, 1.14);
+
+  @include media(desktop){
+    margin-bottom: 48px;
+    font-size: 48px;
+  }
+}

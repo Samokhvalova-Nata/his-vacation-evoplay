@@ -7,8 +7,13 @@
 @import './reviews.scss';
 @import './gallery.scss';
 @import './footer.scss';
+
 @import './policy.scss';
 @import './terms.scss';
+
+@import './common/container';
+@import './common/section';
+
 
 :root {
   font-synthesis: none;
