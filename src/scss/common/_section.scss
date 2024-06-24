@@ -1,6 +1,6 @@
 .section {
   padding-top: 32px;
-  padding-bottom: 24px;
+  padding-bottom: 32px;
 
   @include media(desktop) {
     padding-top: 48px;
@@ -12,7 +12,8 @@
   margin-bottom: 32px;
   color: $_add_text_color;
   text-align: center;
-  @include font(28, 1.14);
+  font-size: 28px;
+  line-height: 1.14;
 
   @include media(desktop){
     margin-bottom: 48px;
