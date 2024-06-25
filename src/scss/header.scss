@@ -1,24 +1,116 @@
 .header {
-  padding: 20px 0;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-
-
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  background-color: $_main_bg_color;
+  padding-top: 24px;
   @include media(desktop) {
-    justify-content: flex-end;
+    padding-top: 32px;
   }
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
+.header_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.logo {
+  @include media(desktop) {
+    width: 140px;
+    height: 72px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity $_transition, visibility $_transition;
+  @include media(desktop) {
+    display: none;
+  }
+}
+.is-open {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.open_menu {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0px;
+  font-family: inherit;
+  cursor: pointer;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.close_menu {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0px;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 213px;
+  background: $_add_bg_color;
+  transform: translateX(0);
+  transition: transform $_transition;
+}
+
+.backdrop.is-open .menu_container {
+  transform: translateX(100%);
+}
+
+.nav_desktop {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+.nav_list {
+  padding-top: 86px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  @include font(24, 24);
+  @include media(desktop) {
+    padding-top: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    @include font(18, 24);
+  }
+}
+
+.nav_link {
+  @include media(desktop) {
+    padding-bottom: 27px;
+    padding-top: 21px;
+  }
 }
 
 // .nav-link:hover,
