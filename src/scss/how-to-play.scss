@@ -6,6 +6,13 @@
   display: flex;
   flex-direction: column;
   gap: 52px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px;
+  }
 }
 
 .play_item {
@@ -13,9 +20,25 @@
   text-align: center;
 }
 
+.play_item_mobile {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.play_item_desk {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}
+
 .play_icon {
-  width: 283px;
-  height: 138px;
+  @include media(desktop) {
+    width: 310px;
+    height: 230px;
+  }
 }
 
 .play_icon_1 {
@@ -32,6 +55,18 @@
 .play_icon_2 {
   color: $_play_color_2;
 }
+.play_icon_3 {
+  color: $_play_color_3;
+}
+.play_icon_4 {
+  color: $_play_color_4;
+}
+.play_icon_5 {
+  color: $_play_color_5;
+}
+.play_icon_6 {
+  color: $_play_color_6;
+}
 
 .play_img {
   width: 226px;
@@ -39,12 +74,15 @@
   border-radius: 64px;
 
   position: absolute;
-    top: 35px;
-    left: 21px;
+  top: 35px;
+  left: 21px;
 
   @include media(desktop) {
-    width: 424px;
-    height: 241px;
+    width: 420px;
+    height: 238px;
+
+    top: 70px;
+    left: 50px;
   }
 }
 
@@ -53,8 +91,17 @@
   text-align: left;
 
   position: absolute;
-    top: 42px;
-    left: 39px;
+  top: 50px;
+  left: 39px;
+
+  @include media(desktop) {
+    width: 247px;
+    font-size: 18px;
+    line-height: 1.33;
+
+    top: 65px;
+    left: 32px;
+  }
 }
 
 .play_text > span {
