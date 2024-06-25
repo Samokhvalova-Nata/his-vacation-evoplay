@@ -1,0 +1,44 @@
+.policy {
+  padding-top: 93px;
+  padding-bottom: 42px;
+
+  @include media(desktop) {
+    padding-top: 168px;
+    padding-bottom: 65px;
+  }
+}
+
+.policy_title {
+  margin-bottom: 24px;
+
+  text-align: center;
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  @include font(32, 40);
+  letter-spacing: 0.384px;
+
+  @include media(desktop) {
+    margin-bottom: 83px;
+
+    @include font(60, 60);
+    letter-spacing: 0.72px;
+  }
+}
+
+.policy_subtitle {
+  @include font(16, 20);
+  font-weight: 400;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    @include font(32, 32);
+    font-weight: 600;
+  }
+}
+
+.policy_text:not(:last-child) {
+  margin-bottom: 24px;
+  @include media(desktop) {
+    @include font(20, 28);
+  }
+}
