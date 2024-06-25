@@ -1,50 +1,12 @@
 .footer {
-  padding-top: 32px;
   padding-bottom: 10px;
   text-align: center;
-
-  @include media(desktop) {
-    padding-top: 35px;
-  }
-}
-
-.footer_wrap_warning {
-  @include media(desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-  }
-}
-
-.footer_icon_warning {
-  @include media(desktop) {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-.footer_text_warning {
-  width: 288px;
-  text-align: left;
-  font-size: 14px;
-  line-height: 1.29;
-  text-transform: uppercase;
-
-  @include media(desktop) {
-    width: 1162px;
-    margin-top: 0px;
-    font-size: 20px;
-    line-height: 1.4;
-  }
 }
 
 .footer_logo {
-  margin-top: 39px;
   margin-left: auto;
   margin-right: auto;
   @include media(desktop) {
-    margin-top: 24px;
     width: 140px;
     height: 72px;
   }
