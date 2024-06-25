@@ -29,4 +29,28 @@
       }
     });
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1.99,
+      loop: true,
+      centeredSlides: true,
+      spaceBetween: 8,
+      grabCursor: true,
+      breakpoints: {
+        430: {
+          slidesPerView: 3,
+          centeredSlides: true,
+        },
+        1440: {
+          slidesPerView: 5,
+          spaceBetween: 32,
+        },
+      },
+      navigation: {
+        nextEl: '.btn-next',
+        prevEl: '.btn-prev',
+      },
+    });
+  });
 })();
