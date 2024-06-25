@@ -1,5 +1,8 @@
 .about_container {
-  padding-bottom: 112px;
+  @include media(desktop) {
+    padding-bottom: 112px;
+  }
+
 }
 
 .about_list {
