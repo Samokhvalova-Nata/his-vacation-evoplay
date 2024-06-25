@@ -1,0 +1,44 @@
+.terms {
+  padding-top: 93px;
+  padding-bottom: 24px;
+  @include media(desktop) {
+    padding-top: 168px;
+    padding-bottom: 64px;
+  }
+}
+
+.terms_title {
+  text-align: center;
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  @include font(32, 40);
+  letter-spacing: 0.384px;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 32px;
+    @include font(60, 60);
+    letter-spacing: 0.72px;
+  }
+}
+
+.terms_text {
+  margin-bottom: 24px;
+  color: black;
+  @include media(desktop) {
+    margin-bottom: 32px;
+    @include font(20, 28);
+  }
+}
+
+.terms_preTitle {
+  @include media(desktop) {
+    @include font(32, 32);
+    font-weight: 600;
+  }
+}
+
+.terms_accent {
+  @include media(desktop) {
+    font-weight: 600;
+  }
+}
