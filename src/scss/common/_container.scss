@@ -6,11 +6,11 @@
   margin-right: auto;
   // outline: 2px solid tomato;
 
-  @include media (mobile) {
+  @include media(mobile) {
     max-width: 320px;
   }
 
-  @include media (desktop) {
+  @include media(desktop) {
     max-width: 1440px;
     padding-left: 87px;
     padding-right: 87px;
