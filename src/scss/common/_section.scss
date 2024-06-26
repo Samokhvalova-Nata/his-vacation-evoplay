@@ -1,10 +1,12 @@
 .section {
   padding-top: 32px;
   padding-bottom: 32px;
+  scroll-margin-top: 64px;
 
   @include media(desktop) {
     padding-top: 48px;
     padding-bottom: 48px;
+    scroll-margin-top: 104px;
   }
 }
 

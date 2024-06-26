@@ -36,9 +36,12 @@
   }
 }
 
-.policy_text:not(:last-child) {
-  margin-bottom: 24px;
+.policy_text {
   @include media(desktop) {
     @include font(20, 28);
   }
+}
+
+.policy_text:not(:last-child) {
+  margin-bottom: 24px;
 }
