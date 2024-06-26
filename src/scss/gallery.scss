@@ -1,51 +1,13 @@
 .gallery {
   background-color: $_add_bg_color;
-  position: relative;
 }
 
 .gallery_slider {
   width: 100%;
-  max-width: 500px;
+  max-width: 490px;
   margin: 0 auto;
   @include media(desktop) {
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-}
-
-.swiper-slide .gallery_img {
-  width: 150px !important;
-  height: 287px !important;
-  @include media(desktop) {
-    width: 220px !important;
-    height: 424px !important;
-  }
-}
-
-.swiper-slide {
-  //   width: 150px !important;
-  //   height: 287px !important;
-  @include media(desktop) {
-    width: 220px !important;
-    height: 424px !important;
-  }
-}
-
-.swiper-slide.swiper-slide-active .gallery_img {
-  width: 170px !important;
-  height: 365px !important;
-  @include media(desktop) {
-    width: 320px !important;
-    height: 612px !important;
-  }
-}
-
-.swiper-slide-active {
-  width: 170px !important;
-  height: 365px !important;
-  @include media(desktop) {
-    width: 320px !important;
-    height: 612px !important;
+    max-width: 1440px;
   }
 }
 
@@ -53,33 +15,95 @@
   align-items: center;
 }
 
+.gallery_img {
+  object-fit: fill;
+}
+
+.swiper-slide-next.slider_gallery .gallery_img,
+.swiper-slide-prev.slider_gallery .gallery_img {
+  width: 150px !important;
+  height: 287px !important;
+  @include media(desktop) {
+    width: 238px !important;
+    height: 455px !important;
+  }
+}
+
+.swiper-slide-next.slider_gallery,
+.swiper-slide-prev.slider_gallery {
+  width: 150px !important;
+  height: 287px !important;
+  @include media(desktop) {
+    width: 238px !important;
+    height: 455px !important;
+  }
+}
+
+.swiper-slide-active.slider_gallery {
+  width: 170px !important;
+  height: 365px !important;
+  @include media(desktop) {
+    width: 320px !important;
+    height: 612px !important;
+  }
+}
+
+.swiper-slide-active.slider_gallery .gallery_img {
+  width: 170px !important;
+  height: 365px !important;
+  @include media(desktop) {
+    width: 320px !important;
+    height: 612px !important;
+  }
+}
+
 .btn-next {
+  position: absolute;
+  z-index: 5;
   width: 44px;
   height: 44px;
   border: 1px solid black;
   border-radius: 50%;
   background-color: transparent;
-  //   margin-right: 16px;
+  top: -30px;
+  right: 16px;
+  @include media(desktop) {
+    width: 64px;
+    height: 64px;
+    right: 462px;
+  }
 }
 
 .btn-prev {
+  position: absolute;
+  z-index: 5;
   width: 44px;
   height: 44px;
   border: 1px solid black;
   border-radius: 50%;
   background-color: transparent;
-  //   margin-left: 16px;
+  top: -30px;
+  left: 14px;
+  @include media(desktop) {
+    width: 64px;
+    height: 64px;
+    left: 462px;
+  }
 }
 
 .gallery_btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: relative;
 }
 
 .gallery_icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  @include media(desktop) {
+    width: 54px;
+    height: 54px;
+  }
 }
