@@ -33,8 +33,7 @@
   color: $_add_text_color;
 
   @include media(desktop) {
-    font-size: 36px;
-    line-height: 1.22;
+    @include font(36, 38);
   }
 }
 

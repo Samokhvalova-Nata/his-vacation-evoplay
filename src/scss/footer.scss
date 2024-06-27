@@ -6,9 +6,16 @@
 .footer_logo {
   margin-left: auto;
   margin-right: auto;
+
   @include media(desktop) {
     width: 140px;
     height: 72px;
+  }
+
+  transition: transform $_transition;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
   }
 }
 
@@ -127,10 +134,18 @@
   }
 }
 
+.footer_nav_link {
+  transition: color $_transition;
+
+  &:hover,
+  &:focus {
+    color: $_hover_color;
+  }
+}
+
 .policy_links {
   color: $_add_text_color;
-  font-size: 12px;
-  line-height: 1.67;
+  @include font(12, 20);
 
   @include media(desktop) {
     display: flex;
@@ -139,9 +154,16 @@
   }
 }
 
+.policy_links > a {
+  transition: color $_transition;
+  &:hover,
+  &:focus {
+    color: $_hover_color;
+  }
+}
+
 .copyright {
   margin-top: 16px;
-
   @include media(desktop) {
     margin-top: 0px;
     margin-left: 289px;

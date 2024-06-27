@@ -20,6 +20,12 @@
     width: 140px;
     height: 72px;
   }
+
+  transition: transform $_transition;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }
 
 .backdrop {
@@ -50,7 +56,7 @@
   transition: color $_transition;
   &:hover,
   &:focus {
-    stroke: #f1b745;
+    stroke: $_hover_color;
   }
   @include media(desktop) {
     display: none;
@@ -62,7 +68,7 @@
   transition: all $_transition;
   &:hover,
   &:focus {
-    stroke: #f1b745;
+    stroke: $_hover_color;
   }
 }
 
@@ -85,7 +91,7 @@
   transition: all $_transition;
   &:hover,
   &:focus {
-    stroke: #f1b745;
+    stroke: $_hover_color;
   }
 }
 
@@ -133,7 +139,7 @@
   transition: color $_transition;
   &:hover,
   &:focus {
-    color: #f1b745;
+    color: $_hover_color;
   }
   @include media(desktop) {
     padding-bottom: 27px;
