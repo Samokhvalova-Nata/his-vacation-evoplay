@@ -30,20 +30,6 @@ export default defineConfig(({ command }) => {
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
-      ViteImageOptimizer({
-        png: {
-          // https://sharp.pixelplumbing.com/api-output#png
-          quality: 60,
-        },
-        jpeg: {
-          // https://sharp.pixelplumbing.com/api-output#jpeg
-          quality: 60,
-        },
-        jpg: {
-          // https://sharp.pixelplumbing.com/api-output#jpeg
-          quality: 60,
-        },
-      }),
     ],
     css: {
       preprocessorOptions: {
