@@ -67,6 +67,7 @@
   background-color: transparent;
   top: -30px;
   right: 16px;
+  padding: 0;
   transition: all $_transition;
   &:active {
     border-color: #2c4621;
@@ -92,6 +93,7 @@
   background-color: transparent;
   top: -30px;
   left: 14px;
+  padding: 0 0 0 2px;
   transition: all $_transition;
   &:active {
     border-color: #2c4621;
@@ -101,6 +103,7 @@
     border-color: #4b8d2e;
   }
   @include media(desktop) {
+    padding-left: 6px;
     width: 64px;
     height: 64px;
     left: 462px;
