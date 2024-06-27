@@ -67,6 +67,14 @@
   background-color: transparent;
   top: -30px;
   right: 16px;
+  transition: all $_transition;
+  &:active {
+    border-color: #2c4621;
+  }
+  &:hover,
+  &:focus {
+    border-color: #4b8d2e;
+  }
   @include media(desktop) {
     width: 64px;
     height: 64px;
@@ -84,6 +92,14 @@
   background-color: transparent;
   top: -30px;
   left: 14px;
+  transition: all $_transition;
+  &:active {
+    border-color: #2c4621;
+  }
+  &:hover,
+  &:focus {
+    border-color: #4b8d2e;
+  }
   @include media(desktop) {
     width: 64px;
     height: 64px;
@@ -102,6 +118,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #58e31c;
+  transition: all $_transition;
+  &:active {
+    fill: #2c4621;
+  }
+  &:hover,
+  &:focus {
+    fill: #4b8d2e;
+  }
   @include media(desktop) {
     width: 54px;
     height: 54px;

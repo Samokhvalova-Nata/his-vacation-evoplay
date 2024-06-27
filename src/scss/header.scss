@@ -47,8 +47,22 @@
   border: 0px;
   font-family: inherit;
   cursor: pointer;
+  transition: color $_transition;
+  &:hover,
+  &:focus {
+    stroke: #f1b745;
+  }
   @include media(desktop) {
     display: none;
+  }
+}
+
+.open_icon {
+  stroke: #232222;
+  transition: all $_transition;
+  &:hover,
+  &:focus {
+    stroke: #f1b745;
   }
 }
 
@@ -65,6 +79,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.close_icon {
+  transition: all $_transition;
+  &:hover,
+  &:focus {
+    stroke: #f1b745;
+  }
 }
 
 .menu_container {
@@ -108,13 +130,13 @@
 }
 
 .nav_link {
+  transition: color $_transition;
+  &:hover,
+  &:focus {
+    color: #f1b745;
+  }
   @include media(desktop) {
     padding-bottom: 27px;
     padding-top: 21px;
   }
 }
-
-// .nav-link:hover,
-// .nav-link:focus {
-
-// }
