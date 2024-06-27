@@ -28,14 +28,12 @@
 .disclaimer_text_warning {
   width: 288px;
   text-align: left;
-  font-size: 14px;
-  line-height: 1.29;
+  @include font(14, 18);
   text-transform: uppercase;
 
   @include media(desktop) {
     width: 1162px;
     margin-top: 0px;
-    font-size: 20px;
-    line-height: 1.4;
+    @include font(20, 28);
   }
 }

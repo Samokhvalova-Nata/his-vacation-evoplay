@@ -96,8 +96,7 @@
 
   @include media(desktop) {
     width: 247px;
-    font-size: 18px;
-    line-height: 1.33;
+    @include font(18, 24);
 
     top: 65px;
     left: 32px;

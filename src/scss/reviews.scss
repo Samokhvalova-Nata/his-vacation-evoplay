@@ -59,16 +59,14 @@
 
 .reviews_text {
   @include media(desktop) {
-    font-size: 24px;
-    line-height: 1.33;
+    @include font(24, 32);
   }
 }
 
 .review_author {
   padding-left: 95px;
   @include media(desktop) {
-    font-size: 20px;
-    line-height: 1.4;
     padding-left: 280px;
+    @include font(20, 28);
   }
 }
