@@ -4,7 +4,7 @@
   background-image: url('./../img/hero_bg.webp'), url('./../img/hero_dear.webp');
   background-repeat: no-repeat;
   background-position: bottom, bottom;
-  background-size: 436px 334px, 330px 291px;
+  background-size: 536px 345px, 330px 291px;
   @include media(desktop) {
     background-image: url('./../img/hero_bg.webp'),
       url('./../img/hero_box.webp'), url('./../img/hero_dear.webp');
