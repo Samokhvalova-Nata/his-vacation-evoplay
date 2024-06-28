@@ -3,18 +3,19 @@
   padding-bottom: 262px;
   background-image: url('./../img/hero_bg.webp'), url('./../img/hero_dear.webp');
   background-repeat: no-repeat;
-  background-position: bottom, bottom;
-  background-size: 536px 345px, 330px 291px;
+  background-position: bottom right 36%, bottom left 11%;
+  background-size: 526px 346px, 504px 281px;
+  max-width: 526px;
+  margin-left: auto;
+  margin-right: auto;
   @include media(desktop) {
     background-image: url('./../img/hero_bg.webp'),
       url('./../img/hero_box.webp'), url('./../img/hero_dear.webp');
     background-position: bottom right, bottom left 40%, bottom;
-    background-size: 1240px 776px, 396px 466px, 1440px;
+    background-size: 1240px 776px, 396px 466px, 1440px 870px;
     padding-top: 208px;
     padding-bottom: 555px;
     max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
