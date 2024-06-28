@@ -1,48 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper', {
-    slidesPerView: 2,
+    slidesPerView: 1.75,
     loop: true,
     centeredSlides: true,
     spaceBetween: 8,
     grabCursor: true,
     breakpoints: {
-      340: {
-        slidesPerView: 2.05,
-        centeredSlides: true,
-      },
-      360: {
-        slidesPerView: 2.2,
-        centeredSlides: true,
-      },
-      380: {
-        slidesPerView: 2.3,
-        centeredSlides: true,
-      },
-      400: {
-        slidesPerView: 2.4,
-        centeredSlides: true,
-      },
-      420: {
-        slidesPerView: 2.5,
-        centeredSlides: true,
-      },
-      440: {
-        slidesPerView: 2.6,
-        centeredSlides: true,
-      },
-      460: {
-        slidesPerView: 2.7,
-        centeredSlides: true,
-      },
-      480: {
-        slidesPerView: 2.8,
-        centeredSlides: true,
-      },
-      490: {
-        slidesPerView: 2.99,
-        centeredSlides: true,
-      },
-
+      320: { slidesPerView: 1.9 },
+      330: { slidesPerView: 1.95 },
+      340: { slidesPerView: 2 },
+      350: { slidesPerView: 2.05 },
+      360: { slidesPerView: 2.1 },
+      370: { slidesPerView: 2.2 },
+      380: { slidesPerView: 2.25 },
+      390: { slidesPerView: 2.3 },
+      400: { slidesPerView: 2.4 },
+      410: { slidesPerView: 2.45 },
+      420: { slidesPerView: 2.5 },
+      430: { slidesPerView: 2.55 },
+      440: { slidesPerView: 2.6 },
+      450: { slidesPerView: 2.65 },
+      460: { slidesPerView: 2.75 },
+      470: { slidesPerView: 2.8 },
+      480: { slidesPerView: 2.88 },
+      490: { slidesPerView: 2.99 },
+      500: { slidesPerView: 3 },
       1440: {
         slidesPerView: 5,
         spaceBetween: 32,
